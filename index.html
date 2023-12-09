@@ -43,9 +43,82 @@
         <link href="css/style.css" rel="stylesheet" />
         <!-- responsive style -->
         <link href="css/responsive.css" rel="stylesheet" />
-    </head>
+    <style>
+        /* Add styles for the sticky cookie consent bar */
+        #cookieConsent {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            z-index: 100;
+            display: none; /* Initially hide the bar */
+        }
 
-    <body>
+        #cookieConsent button {
+            background-color: #e8491d;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+
+    <!-- Add this script for cookie functionality -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function setCookie(name, value, days) {
+                var expires = "";
+                if (days) {
+                    var date = new Date();
+                    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+                    expires = "; expires=" + date.toUTCString();
+                }
+                document.cookie = name + "=" + value + expires + "; path=/";
+            }
+
+            function getCookie(name) {
+                var nameEQ = name + "=";
+                var ca = document.cookie.split(';');
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+            }
+
+            function checkCookieConsent() {
+                var cookieConsent = getCookie("cookieConsent");
+                var consentBar = document.getElementById("cookieConsent");
+
+                if (!cookieConsent) {
+                    consentBar.style.display = "block";
+
+                    document.getElementById("acceptCookies").addEventListener("click", function () {
+                        setCookie("cookieConsent", "accepted", 30); // Set cookie for 30 days
+                        consentBar.style.display = "none";
+                    });
+                }
+            }
+
+            checkCookieConsent();
+        });
+    </script>
+</head>
+
+<body>
+    <!-- ... (existing body content) ... -->
+
+    <!-- Cookie Consent Bar -->
+    <div id="cookieConsent">
+        This website uses cookies. By using this website, you consent to the use of cookies.
+        <button id="acceptCookies">Accept</button>
+    </div>
+    </div>
         <div class="hero_area">
             <!-- header section strats -->
             <header class="header_section">
