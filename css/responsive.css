@@ -30,11 +30,15 @@
     margin-top: 45px;
   }
 
+  .heading_container p {
+    padding-right: 0;
+  }
+
   .contact_section {
     padding-bottom: 0;
   }
 
-  .contact_section .heading_container {
+  .contact_section .heading_container .heading_container p {
     padding-left: 15px;
   }
 
@@ -52,6 +56,10 @@
 @media (max-width: 576px) {
   .header_section .header_top .contact_nav a span {
     display: none;
+  }
+
+  .heading_container p {
+    padding-right: 0;
   }
 
 
@@ -97,11 +105,11 @@
 }
 
 @media (max-width: 420px) {
-  .service_section .box {
+  .service_section .box .heading_container {
     flex-direction: column;
   }
 
-  .service_section .box .img-box {
+  .service_section .box .img-box .heading_container {
     justify-content: flex-start;
     margin-bottom: 15px;
   }
