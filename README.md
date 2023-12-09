@@ -1,6 +1,6 @@
 # Albiol Jepeto - Parking de Caravanas
 
-¡Bienvenido a la página web de Albiol Jepeto, tu destino confiable para el estacionamiento de caravanas! Puedes visualizar la wem en [esta url](https://albiol-jepeto.vercel.app/)
+¡Bienvenido a la página web de Albiol Jepeto, tu destino confiable para el estacionamiento de caravanas! Puedes visualizar la web en [esta url](https://albiol-jepeto.vercel.app/)
 
 ![web](https://i.ibb.co/J70DDH0/Captura-de-pantalla-2023-12-09-032022.png)
 
