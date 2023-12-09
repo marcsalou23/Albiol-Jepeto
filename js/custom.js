@@ -1,4 +1,3 @@
-// to get current year
 function getYear() {
     var currentDate = new Date();
     var currentYear = currentDate.getFullYear();
@@ -7,7 +6,6 @@ function getYear() {
 
 getYear();
 
-//  owl carousel script
 $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 20,
@@ -25,9 +23,6 @@ $('.owl-carousel').owlCarousel({
     },
 });
 
-//    end owl carousel script
-
-/** google_map js **/
 function myMap() {
     var mapProp = {
         center: new google.maps.LatLng(41.25225743727103, 1.0874838588981983),
@@ -39,7 +34,6 @@ function myMap() {
         mapProp
     );
 
-    // Create a marker and set its position
     var marker = new google.maps.Marker({
         position: mapProp.center,
         map: map,
