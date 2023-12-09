@@ -48,13 +48,18 @@
                                 ></i>
                                 <span> Email : albert.avila@gmail.com </span>
                             </a>
-                            <a href="">
-                                <i
-                                    class="fa fa-map-marker"
-                                    aria-hidden="true"
-                                ></i>
-                                <span> Ubicación </span>
-                            </a>
+<script>
+    function openGoogleMaps() {
+        var latitude = 41.25225743727103;
+        var longitude = 1.0874838588981983;
+        window.open('https://www.google.com/maps?q=' + latitude + ',' + longitude);
+    }
+</script>
+<a href="javascript:void(0);" onclick="openGoogleMaps()">
+    <i class="fa fa-map-marker" aria-hidden="true"></i>
+    <span> Ubicación </span>
+</a>
+
                         </div>
                     </div>
                 </div>
@@ -122,12 +127,9 @@
                 <div class="container">
                     <div class="heading_container">
 <h2>Nuestros <span>Servicios</span></h2>
-
-<!-- Agregando descripción de ubicación -->
 <p>Nos ubicamos en L'Albiol, un tranquilo pueblo situado a 25 minutos del aeropuerto de Reus.</p>
 <p>En nuestra empresa, nos enorgullece ofrecer una experiencia completa para los propietarios de caravanas.</p>
 <p>Nuestros servicios incluyen:</p>
-<!-- Agregando la imagen de la ubicación -->
 <div class="col-md-6" style="clear: both;">
     <img src="images/albiol.jpg" alt="" style="max-width: 66%; float: right; margin-top: -150px; margin-right: -500px;" />
 </div>
@@ -199,13 +201,12 @@
                         <div class="info_contact">
                             <h4>Información</h4>
                             <div class="contact_link_box">
-                                <a href="">
-                                    <i
-                                        class="fa fa-map-marker"
-                                        aria-hidden="true"
-                                    ></i>
-                                    <span> Ubicación </span>
-                                </a>
+
+<a href="javascript:void(0);" onclick="openGoogleMaps()">
+    <i class="fa fa-map-marker" aria-hidden="true"></i>
+    <span> Ubicación </span>
+</a>
+
                                 <a href="">
                                     <i
                                         class="fa fa-phone"

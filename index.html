@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- Basic -->
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <!-- Mobile Metas -->
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <!-- Site Metas -->
         <meta name="keywords" content="" />
         <meta name="description" content="" />
         <meta name="author" content="" />
@@ -122,13 +119,19 @@
                                 ></i>
                                 <span> Email : albert.avila@gmail.com </span>
                             </a>
-                            <a href="">
-                                <i
-                                    class="fa fa-map-marker"
-                                    aria-hidden="true"
-                                ></i>
-                                <span> Ubicación </span>
-                            </a>
+<script>
+    function openGoogleMaps() {
+        var latitude = 41.25225743727103;
+        var longitude = 1.0874838588981983;
+
+        window.open('https://www.google.com/maps?q=' + latitude + ',' + longitude);
+    }
+</script>
+<a href="javascript:void(0);" onclick="openGoogleMaps()">
+    <i class="fa fa-map-marker" aria-hidden="true"></i>
+    <span> Ubicación </span>
+</a>
+
                         </div>
                     </div>
                 </div>
@@ -430,13 +433,11 @@ Ofrecemos un servicio integral para nuestros clientes. Una vez que han dejado su
                         <div class="info_contact">
                             <h4>Información</h4>
                             <div class="contact_link_box">
-                                <a href="">
-                                    <i
-                                        class="fa fa-map-marker"
-                                        aria-hidden="true"
-                                    ></i>
-                                    <span> Ubicación </span>
-                                </a>
+                        
+                                <a href="javascript:void(0);" onclick="openGoogleMaps()">
+    <i class="fa fa-map-marker" aria-hidden="true"></i>
+    <span> Ubicación </span>
+</a>
                                 <a href="">
                                     <i
                                         class="fa fa-phone"
